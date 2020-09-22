@@ -1,1 +1,1 @@
-# sonjaolson.co
+Sonja Olson portfolio

@@ -30,7 +30,7 @@
   font-size: calc(10px + 2vmin);
   color: black;
   background-size: cover;
-  background-image: url(/static/media/mountains.40681c23.png);
+  background-image: url("./assets/mountains.png");
   background-repeat: no-repeat;
 }
 

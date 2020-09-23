@@ -30,8 +30,13 @@
   font-size: calc(10px + 2vmin);
   color: black;
   background-size: cover;
-  background-image: url("./assets/mountains.png");
+  background-image: url("../../assets/mountains.png");
   background-repeat: no-repeat;
+}
+
+.section {
+  background-color: white;
+  min-height: 100vh;
 }
 
 .App-link {

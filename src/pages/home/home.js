@@ -11,6 +11,20 @@ import Resume from "../../components/resume/resume";
 const Bio = styled.div`
   margin: 0 auto;
 `;
+
+const Github = styled(FaGithub)`
+  color: black;
+  &visited {
+    color: inherit;
+  }
+`;
+
+const LinkedIn = styled(AiFillLinkedin)`
+  color: black;
+  &visited {
+    color: inherit;
+  }
+`;
 const Home = () => {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } });
   return (
@@ -21,10 +35,10 @@ const Home = () => {
           <Bio>
             Sonja Olson <br />
             <a href="https://github.com/olsonso">
-              <FaGithub />
+              <Github />
             </a>
             <a to="https://www.linkedin.com/in/olsonso/">
-              <AiFillLinkedin />
+              <LinkedIn />
             </a>
           </Bio>
         </animated.div>

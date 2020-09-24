@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { FaGithub } from "react-icons/fa";
 import { AiFillLinkedin } from "react-icons/ai";
@@ -37,7 +36,7 @@ const Home = () => {
             <a href="https://github.com/olsonso">
               <Github />
             </a>
-            <a to="https://www.linkedin.com/in/olsonso/">
+            <a href="https://www.linkedin.com/in/olsonso/">
               <LinkedIn />
             </a>
           </Bio>

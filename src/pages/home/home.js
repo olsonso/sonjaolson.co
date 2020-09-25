@@ -5,6 +5,7 @@ import { AiFillLinkedin } from "react-icons/ai";
 import "./home.css";
 import { useSpring, animated } from "react-spring";
 import Card from "../../components/card/card";
+
 import Resume from "../../components/resume/resume";
 
 const Bio = styled.div`
@@ -24,23 +25,32 @@ const LinkedIn = styled(AiFillLinkedin)`
     color: inherit;
   }
 `;
+
+const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 50vh;
+`;
+
 const Home = () => {
   const props = useSpring({ opacity: 1, from: { opacity: 0 } });
   return (
     <div className="App">
       <header className="App-header">
-        <animated.div style={props}>
-          <Card />
-          <Bio>
-            Sonja Olson <br />
-            <a href="https://github.com/olsonso">
-              <Github />
-            </a>
-            <a href="https://www.linkedin.com/in/olsonso/">
-              <LinkedIn />
-            </a>
-          </Bio>
-        </animated.div>
+        <Container>
+          <animated.div style={props}>
+            <Card />
+            <Bio>
+              Sonja Olson <br />
+              <a href="https://github.com/olsonso">
+                <Github />
+              </a>
+              <a href="https://www.linkedin.com/in/olsonso/">
+                <LinkedIn />
+              </a>
+            </Bio>
+          </animated.div>
+        </Container>
       </header>
       <div className="section">
         <Resume />

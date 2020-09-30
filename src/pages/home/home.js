@@ -52,9 +52,6 @@ const Home = () => {
           </animated.div>
         </Container>
       </header>
-      <div className="section">
-        <Resume />
-      </div>
     </div>
   );
 };
